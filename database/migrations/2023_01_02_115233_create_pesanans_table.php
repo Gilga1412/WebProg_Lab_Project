@@ -13,7 +13,7 @@ class CreatePesanansTable extends Migration
      */
     public function up()
     {
-        Schema::create('pesanan', function (Blueprint $table) {
+        Schema::create('pesanans', function (Blueprint $table) {
             $table->id();
             $table->integer('User_id');
             $table->integer('Jumlah_Harga');
