@@ -1,0 +1,25 @@
+note:
+main key (M)
+
+
+Database:
+>User
+>Barang:
+(M) )id_Barang
+    )Nama_Barang
+    )Harga
+    )stok
+    )Ketergan/rincian
+    )Jenis_Custom
+
+>Pesanan: (one-to-many :user)
+    )Id_Pesanan
+    )Tanggal_Pemesanan
+    )Jumlah_Harga
+  >Detailnya:
+    )Id_Barang (one-to-many :barang)
+    )Id_Pesanan (one-to-many :Pesanan)
+    )Jumlah_Barang
+    )Jumlah_Harga
+
+
