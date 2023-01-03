@@ -13,7 +13,6 @@ class HomeController extends Controller
 
         //mengatur berapa jumlah page
         $barangs = Barang::paginate(10);
-        dd($barangs);
         //
         return view('Home', ['title' => 'Home'],compact('barangs'));
     }
