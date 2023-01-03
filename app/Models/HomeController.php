@@ -2,11 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Barang;
 use Illuminate\Http\Request;
+
+
 
 class HomeController extends Controller
 {
     public function home() {
-        return view('Home', ['title' => 'Home']);
+
+        //mengatur berapa jumlah page
+        $barangs = Barang::paginate(10);
+        dd($barangs);
+        //
+        return view('Home', ['title' => 'Home'],compact('barangs'));
     }
 }
