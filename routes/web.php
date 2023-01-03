@@ -17,11 +17,8 @@ Route::get('/dull', function () {
     return view('welcome');
 });
 //main route
-Route::get('/', function () {
-    return view('Home',[
-        'title' => 'Home',
-    ]);
-});
+Route::get('/', 'HomeController@index')->name('Home');
+
 Route::get('/register', function () {
     return view('Register',[
         'title' => 'Register',

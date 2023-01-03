@@ -8,12 +8,24 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-    public function home() {
-
-        //mengatur berapa jumlah page
-        $barangs = Barang::paginate(10);
-        //
-        return view('Home', ['title' => 'Home'],compact('barangs'));
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        $barangs = Barang::paginate(20);
+        return view('home', compact('barangs'));
     }
 }
