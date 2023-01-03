@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->date('DOB');
             $table->string('Country');
             $table->rememberToken();
+            $table->timestamp('verified_at')->nullable();
             $table->timestamps();
         });
     }
