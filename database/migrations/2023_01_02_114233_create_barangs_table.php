@@ -17,8 +17,8 @@ class CreateBarangsTable extends Migration
             $table->id();
             $table->string('Nama_Barang');
             $table->string('Jenis_Custom');
-            $table->integer('Stok')->nullable();
-            $table->integer('Harga')->nullable();
+            $table->integer('Stok');
+            $table->integer('Harga');
             $table->string('Keterangan');
             $table->timestamps();
         });
