@@ -1,7 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container">
         {{--             ^-fluid  --}}
-        <a class="navbar-brand" href="/">Barbatos Shop</a>
+
+        <a class="navbar-brand" href="/">
+        <img src="img/pngwing.png" alt="logo" width="30"class="d-inline-block align-text">
+        Barbatos Shop
+        </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
