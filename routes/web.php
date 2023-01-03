@@ -33,7 +33,6 @@ Route::get('/login', function () {
     ]);
 });
 
-
 //rumit
 Route::get('/category', function () {
     return view('Category',[
