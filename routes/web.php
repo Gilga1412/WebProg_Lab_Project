@@ -41,3 +41,5 @@ Route::get('/category', function () {
     ]);
 });
 
+Route::get('/Home', [HomeController::class, 'home']);
+Route::post('/register', [AuthenController::class, 'register']);
