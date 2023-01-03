@@ -11,6 +11,6 @@ class Barang extends Model
     // ini konenksi antara Barang ke pesanan_detail
     public function pesanan_detail()
     {
-        return $this->hasMany('App/PesananDetail', 'Barang_id', 'id');
+        return $this->hasMany('App/PesananDetail', 'barangs_id', 'id');
     }
 }

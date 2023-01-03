@@ -11,7 +11,7 @@ class PesananDetail extends Model
     // ini konenksi antara pesanan_detail ke barang
     public function barang()
     {
-        return $this->belongsTo('App/Barang', 'Barang_id', 'id');
+        return $this->belongsTo('App/Barang', 'barangs_id', 'id');
     }
     // ini konenksi antara pesanan_detail ke pesanan
     public function pesanan()
