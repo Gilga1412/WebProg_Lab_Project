@@ -6,7 +6,7 @@
             <div class="col-md-12 mb-3">
                 <img src="img/pngwing.png"class="rounded mx-auto d-block " alt="logo" width="100">
             </div>
-            @foreach ($barangs as $barang)
+            {{--  @foreach ($barangs as $barang)
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @endforeach  --}}
         </div>
     </div>
 @endsection

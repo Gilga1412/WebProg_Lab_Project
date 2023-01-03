@@ -9,7 +9,7 @@ class PesananDetail extends Model
 {
     use HasFactory;
     // ini konenksi antara pesanan_detail ke barang
-    public function barang()
+    public function barangs()
     {
         return $this->belongsTo('App/Barang', 'barangs_id', 'id');
     }
